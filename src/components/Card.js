@@ -1,9 +1,9 @@
-const ComputerCard = (props) => {
+const Card = (props) => {
   return (
     <div className="card">
       <div className="card-image">
         <Image
-          imageUrl={props.imageUrl}
+          imageUrl={props.image.fields.file.url}
           altText={props.model}
         />
       </div>
@@ -21,7 +21,7 @@ const ComputerCard = (props) => {
 
           <div className="columns">
             <div className="column">
-              <Price price={props.price} />
+              <Price price={props.priceInCents} />
             </div>
 
             <div className="column has-text-right">
@@ -93,4 +93,4 @@ const CallToAction = () => (
   <button className="button is-primary">Buy</button>
 );
 
-export default ComputerCard;
+export default Card;
