@@ -37,12 +37,16 @@ const Card = (props) => {
 const Image = ({ imageUrl, altText }) => (
   <figure
     className="image has-text-centered"
-    style={{ height: "200px", overflow: "hidden" }}
+    style={{
+      height: "200px",
+      overflow: "hidden",
+      padding: "1rem",
+    }}
   >
     <img
       src={imageUrl}
       alt={altText}
-      style={{ margin: "0 auto" }}
+      style={{ margin: "0 auto", objectFit: "cover" }}
     />
   </figure>
 );
