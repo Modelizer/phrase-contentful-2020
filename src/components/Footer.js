@@ -22,7 +22,7 @@ const Footer = () => {
             Contentful
           </a>
           , <a href="https://www.phrase.com">Phrase</a>,{" "}
-          <a href="https://reactjs.org">React</a>, &amp;{" "}
+          <a href="https://reactjs.org">React</a> &amp;{" "}
           <a href="https://bulma.io/">Bulma</a>.
         </p>
       </div>
