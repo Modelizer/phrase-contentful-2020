@@ -1,7 +1,10 @@
+import { useTranslation } from "react-i18next";
 import logo from "../logo.svg";
 import PreviewToggle from "./PreviewToggle";
 
 function Navbar({ setClientEnv }) {
+  const { t } = useTranslation();
+
   return (
     <nav
       className="navbar is-primary"
@@ -29,7 +32,7 @@ function Navbar({ setClientEnv }) {
           </a>
 
           <a className="navbar-item" href="/cart">
-            Cart
+            {t("cart")}
           </a>
         </div>
 

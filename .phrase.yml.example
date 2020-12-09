@@ -1,0 +1,13 @@
+phrase:
+  access_token: my_phrase_access_token
+  project_id: my_phrase_project_id
+  push:
+    sources:
+      - file: ./public/locales/<locale_name>/translation.json
+        params:
+          file_format: i18next
+  pull:
+    targets:
+      - file: ./public/locales/<locale_name>/translation.json
+        params:
+          file_format: i18next

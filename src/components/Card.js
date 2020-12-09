@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+
 const Card = (props) => {
   return (
     <div className="card">
@@ -93,8 +95,14 @@ const Price = ({ price }) => {
   );
 };
 
-const CallToAction = () => (
-  <button className="button is-primary">Buy</button>
-);
+const CallToAction = () => {
+  const { t } = useTranslation();
+
+  return (
+    <button className="button is-primary">
+      {t("buy")}
+    </button>
+  );
+};
 
 export default Card;

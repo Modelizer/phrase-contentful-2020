@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { ClientContext } from "../context/ClientContext";
+import { CmsClientContext } from "../context/CmsClientContext";
 
 const PreviewToggle = () =>
   process.env.NODE_ENV === "production" ? null : (
@@ -7,7 +7,7 @@ const PreviewToggle = () =>
   );
 
 const ToggleButton = () => {
-  const { env, setEnv } = useContext(ClientContext);
+  const { env, setEnv } = useContext(CmsClientContext);
 
   const toggleClientEnv = () =>
     setEnv(env === "delivery" ? "preview" : "delivery");

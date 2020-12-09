@@ -16,7 +16,7 @@ const envConfig = {
   },
 };
 
-export const createClient = (env = "delivery") => {
+export const createCmsClient = (env = "delivery") => {
   const config = Object.assign(
     {},
     commonConfig,

@@ -1,9 +1,9 @@
 import { useState, useEffect, useContext } from "react";
 import Card from "./Card";
-import { ClientContext } from "../context/ClientContext";
+import { CmsClientContext } from "../context/CmsClientContext";
 
 const Retroware = () => {
-  const { client } = useContext(ClientContext);
+  const { client } = useContext(CmsClientContext);
   const [retroware, setRetroware] = useState([]);
 
   useEffect(() => {

@@ -2,13 +2,16 @@ import { useState } from "react";
 import Retroware from "./components/Retroware";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
-import { createClient } from "./cms/client";
-import { ClientContext } from "./context/ClientContext";
+import { createCmsClient } from "./services/cms";
+import { CmsClientContext } from "./context/CmsClientContext";
+import { useTranslation } from "react-i18next";
 
 function App() {
+  const { t } = useTranslation();
+
   const [cmsEnv, setCmsEnv] = useState("delivery");
   const [cmsClient, setCmsClient] = useState(
-    createClient("delivery"),
+    createCmsClient("delivery"),
   );
 
   const setEnv = (newEnv) => {
@@ -17,25 +20,25 @@ function App() {
     }
 
     setCmsEnv(newEnv);
-    setCmsClient(createClient(newEnv));
+    setCmsClient(createCmsClient(newEnv));
   };
 
   return (
-    <ClientContext.Provider
+    <CmsClientContext.Provider
       value={{ client: cmsClient, env: cmsEnv, setEnv }}
     >
       <Navbar />
 
       <section className="section">
         <div className="container">
-          <h2 className="title">Latest Retroware</h2>
+          <h2 className="title">{t("latest_retroware")}</h2>
 
           <Retroware />
         </div>
       </section>
 
       <Footer />
-    </ClientContext.Provider>
+    </CmsClientContext.Provider>
   );
 }
 
