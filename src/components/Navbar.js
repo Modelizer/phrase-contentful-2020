@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import logo from "../logo.svg";
+import LanguageSwitcher from "./LanguageSwitcher";
 import PreviewToggle from "./PreviewToggle";
 
 function Navbar({ setClientEnv }) {
@@ -39,6 +40,10 @@ function Navbar({ setClientEnv }) {
         <div className="navbar-end">
           <div className="navbar-item">
             <PreviewToggle setClientEnv={setClientEnv} />
+          </div>
+
+          <div className="navbar-item">
+            <LanguageSwitcher />
           </div>
         </div>
       </div>
