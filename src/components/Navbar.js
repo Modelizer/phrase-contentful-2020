@@ -1,6 +1,7 @@
 import logo from "../logo.svg";
+import PreviewToggle from "./PreviewToggle";
 
-function Navbar() {
+function Navbar({ setClientEnv }) {
   return (
     <nav
       className="navbar is-primary"
@@ -21,7 +22,7 @@ function Navbar() {
         </a>
       </div>
 
-      <div id="navbarBasicExample" className="navbar-menu">
+      <div className="navbar-menu">
         <div className="navbar-start">
           <a className="navbar-item" href="/">
             Retroware
@@ -33,7 +34,9 @@ function Navbar() {
         </div>
 
         <div className="navbar-end">
-          <div className="navbar-item"></div>
+          <div className="navbar-item">
+            <PreviewToggle setClientEnv={setClientEnv} />
+          </div>
         </div>
       </div>
     </nav>
