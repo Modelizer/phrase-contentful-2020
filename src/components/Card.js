@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { tInner } from "../services/i18n";
 
 const Card = (props) => {
   return (
@@ -53,18 +54,23 @@ const Image = ({ imageUrl, altText }) => (
   </figure>
 );
 
-const Header = ({ text }) => (
-  <h3 className="title" style={{ margin: "0 0 0.5rem 0" }}>
-    {text}
-  </h3>
-);
+const Header = ({ text }) => {
+  return (
+    <h3
+      className="title"
+      style={{ margin: "0 0 0.5rem 0" }}
+    >
+      {tInner(text)}
+    </h3>
+  );
+};
 
 const Subheader = ({ text }) => (
   <p
     className="is-size-6"
     style={{ marginBottom: "0.5rem" }}
   >
-    {text}
+    {tInner(text)}
   </p>
 );
 
@@ -73,7 +79,7 @@ const Description = ({ text }) => (
     className="is-size-7"
     style={{ minHeight: "2.5rem", marginBottom: "0.25rem" }}
   >
-    {text}
+    {tInner(text)}
   </p>
 );
 
