@@ -25,6 +25,17 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>RBrite</title>
+    <script>
+      window.PHRASEAPP_CONFIG = {
+        fullReparse: true
+      };
+
+      window.PHRASEAPP_INIT_ICE = function () {
+        var phraseapp = document.createElement('script'); phraseapp.type = 'text/javascript'; phraseapp.async = true;
+        phraseapp.src = ['https://', 'phraseapp.com/assets/in-context-editor/2.0/app.js?', new Date().getTime()].join('');
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(phraseapp, s);
+      };
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>

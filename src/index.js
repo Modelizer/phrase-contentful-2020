@@ -5,6 +5,10 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
+window.PHRASEAPP_CONFIG.projectId =
+  process.env.REACT_APP_PHRASE_PROJECT_ID;
+window.PHRASEAPP_INIT_ICE();
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
