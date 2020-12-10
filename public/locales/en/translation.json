@@ -1,6 +1,12 @@
 {
+  "apple_ii_description": "Very good condition. Doesn't include monitor. Includes paddles & tape deck.",
   "atari_jaguar_description": "Brand new, near mint. Unboxed only to test.",
   "buy": "Buy",
   "cart": "Cart",
-  "latest_retroware": "Latest Retroware"
+  "commodore_64_description": " Very good condition. All original parts.",
+  "game_gear_description": "Excellent condition. All original parts.",
+  "latest_retroware": "Latest Retroware",
+  "retroware": "Retroware",
+  "sega_saturn_description": "New CD drive and power supply. Otherwise all original parts. Excellent condition.",
+  "zx_spectrum_description": "Excellent condition. New power supply. Original parts otherwise."
 }

@@ -29,7 +29,7 @@ function Navbar({ setClientEnv }) {
       <div className="navbar-menu">
         <div className="navbar-start">
           <a className="navbar-item" href="/">
-            Retroware
+            {t("retroware")}
           </a>
 
           <a className="navbar-item" href="/cart">

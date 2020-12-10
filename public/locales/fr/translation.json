@@ -1,6 +1,12 @@
 {
+  "apple_ii_description": "Très bonne condition. N'inclut pas le moniteur. Comprend des pagaies et un jeu de bandes.",
   "atari_jaguar_description": "Tout neuf, presque neuf. Unboxed uniquement pour tester.",
   "buy": "Acheter",
   "cart": "Panier",
-  "latest_retroware": "Dernier Retroware"
+  "commodore_64_description": "Très bonne condition. Toutes les pièces d'origine.",
+  "game_gear_description": "Condition excellente. Toutes les pièces d'origine.",
+  "latest_retroware": "Dernier Retroware",
+  "retroware": "Retroware",
+  "sega_saturn_description": "Nouveau lecteur de CD et alimentation. Sinon toutes les pièces d'origine. Condition excellente.",
+  "zx_spectrum_description": "Condition excellente. Nouvelle alimentation. Pièces d'origine autrement."
 }
