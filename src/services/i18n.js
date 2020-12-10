@@ -22,6 +22,6 @@ i18next
   });
 
 export const tInner = (str) =>
-  str.replace(/{(.+)}/g, (_, key) => i18next.t(key));
+  str.replace(/{([^}]+)}/g, (_, key) => i18next.t(key));
 
 export default i18next;
