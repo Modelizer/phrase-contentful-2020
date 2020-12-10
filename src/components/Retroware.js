@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
-import ComputerCard from "./ComputerCard";
+import Card from "./Card";
 
-const Computers = () => {
-  const [computers, setComputers] = useState([]);
+const Retroware = () => {
+  const [retroware, setRetroware] = useState([]);
 
   useEffect(() => {
-    setComputers([
+    setRetroware([
       {
         id: 1,
         model: "ZX Spectrum",
@@ -14,7 +14,7 @@ const Computers = () => {
           "Excellent condition. New power supply. Original parts otherwise.",
         imageUrl:
           "https://upload.wikimedia.org/wikipedia/commons/3/33/ZXSpectrum48k.jpg",
-        price: 13999,
+        priceInCents: 13999,
       },
       {
         id: 2,
@@ -24,23 +24,20 @@ const Computers = () => {
           "Very good condition. All original parts.",
         imageUrl:
           "https://upload.wikimedia.org/wikipedia/commons/e/e9/Commodore-64-Computer-FL.jpg",
-        price: 14499,
+        priceInCents: 14499,
       },
     ]);
   }, []);
 
   return (
     <div className="columns is-multiline">
-      {computers.map((computer) => (
-        <div
-          key={computer.id}
-          className="column is-one-third"
-        >
-          <ComputerCard {...computer} />
+      {retroware.map((item) => (
+        <div key={item.id} className="column is-one-third">
+          <Card {...item} />
         </div>
       ))}
     </div>
   );
 };
 
-export default Computers;
+export default Retroware;

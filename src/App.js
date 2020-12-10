@@ -1,4 +1,4 @@
-import Computers from "./components/Computers";
+import Retroware from "./components/Retroware";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 
@@ -11,7 +11,7 @@ function App() {
         <div className="container">
           <h2 className="title">Latest Retroware</h2>
 
-          <Computers />
+          <Retroware />
         </div>
       </section>
 

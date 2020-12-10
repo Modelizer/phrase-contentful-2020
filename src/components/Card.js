@@ -1,4 +1,4 @@
-const ComputerCard = (props) => {
+const Card = (props) => {
   return (
     <div className="card">
       <div className="card-image">
@@ -21,7 +21,7 @@ const ComputerCard = (props) => {
 
           <div className="columns">
             <div className="column">
-              <Price price={props.price} />
+              <Price priceInCents={props.priceInCents} />
             </div>
 
             <div className="column has-text-right">
@@ -71,11 +71,11 @@ const Description = ({ text }) => (
   </p>
 );
 
-const Price = ({ price }) => {
+const Price = ({ priceInCents }) => {
   const formattedPrice = Intl.NumberFormat("en-US", {
     style: "currency",
     currency: "usd",
-  }).format(price / 100);
+  }).format(priceInCents / 100);
 
   return (
     <p
@@ -93,4 +93,4 @@ const CallToAction = () => (
   <button className="button is-primary">Buy</button>
 );
 
-export default ComputerCard;
+export default Card;
