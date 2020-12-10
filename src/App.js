@@ -9,23 +9,23 @@ import { useTranslation } from "react-i18next";
 function App() {
   const { t } = useTranslation();
 
-  const [cmsEnv, setCmsEnv] = useState("delivery");
+  const [cmsApi, setCmsApi] = useState("delivery");
   const [cmsClient, setCmsClient] = useState(
     createCmsClient("delivery"),
   );
 
-  const setEnv = (newEnv) => {
-    if (newEnv === cmsEnv) {
+  const setApi = (newEnv) => {
+    if (newEnv === cmsApi) {
       return;
     }
 
-    setCmsEnv(newEnv);
+    setCmsApi(newEnv);
     setCmsClient(createCmsClient(newEnv));
   };
 
   return (
     <CmsClientContext.Provider
-      value={{ client: cmsClient, env: cmsEnv, setEnv }}
+      value={{ client: cmsClient, api: cmsApi, setApi }}
     >
       <Navbar />
 

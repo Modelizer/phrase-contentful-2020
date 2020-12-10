@@ -4,7 +4,7 @@ const commonConfig = {
   space: process.env.REACT_APP_CONTENTFUL_SPACE_ID,
 };
 
-const envConfig = {
+const apiConfig = {
   delivery: {
     accessToken:
       process.env.REACT_APP_CONTENTFUL_DELIVERY_TOKEN,
@@ -16,11 +16,11 @@ const envConfig = {
   },
 };
 
-export const createCmsClient = (env = "delivery") => {
+export const createCmsClient = (api = "delivery") => {
   const config = Object.assign(
     {},
     commonConfig,
-    envConfig[env],
+    apiConfig[api],
   );
 
   return contentful.createClient(config);
