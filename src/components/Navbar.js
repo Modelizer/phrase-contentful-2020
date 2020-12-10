@@ -39,7 +39,7 @@ function Navbar({ setClientEnv }) {
 
         <div className="navbar-end">
           <div className="navbar-item">
-            <PreviewToggle setClientEnv={setClientEnv} />
+            <PreviewToggle />
           </div>
 
           <div className="navbar-item">
