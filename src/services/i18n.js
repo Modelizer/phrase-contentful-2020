@@ -8,7 +8,7 @@ i18next
   .use(HttpApi)
   .use(
     new PhraseInContextEditorPostProcessor({
-      phraseEnabled: true,
+      phraseEnabled: false, // Change to true to enable ICE
       projectId: process.env.REACT_APP_PHRASE_PROJECT_ID,
     }),
   )
