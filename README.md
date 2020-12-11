@@ -1,10 +1,10 @@
-##Installation
+## Installation
 
 ```
 npm install
 ```
 
-##Setup
+## Setup
 
 1. Copy the file `/.env.example` to `/.env` and add your
    Contenful tokens and Phrase project ID
@@ -20,7 +20,7 @@ You will need a content model in Contentful called
 - image (Media)
 - priceInCents (Integer)
 
-##Development
+## Development
 
 ```
 npm start
