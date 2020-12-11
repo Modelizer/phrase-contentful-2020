@@ -14,13 +14,13 @@ function App() {
     createCmsClient("delivery"),
   );
 
-  const setApi = (newEnv) => {
-    if (newEnv === cmsApi) {
+  const setApi = (newApi) => {
+    if (newApi === cmsApi) {
       return;
     }
 
-    setCmsApi(newEnv);
-    setCmsClient(createCmsClient(newEnv));
+    setCmsApi(newApi);
+    setCmsClient(createCmsClient(newApi));
   };
 
   return (
