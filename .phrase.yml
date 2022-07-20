@@ -1,0 +1,11 @@
+phrase:
+  project_id: 05b8012931a396574281503fa30c6a63
+  file_format: "simple_json"
+  pull:
+    targets:
+    - file: "./app/locales/<locale_name>.json"
+      params:
+        locale_id: b7af27e972e6fd8f5a941eef4b96dc43
+  push:
+    sources:
+    - file: "./app/locales/<locale_name>.json"
