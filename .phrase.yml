@@ -1,11 +1,37 @@
 phrase:
-  project_id: 05b8012931a396574281503fa30c6a63
+  project_id: "05b8012931a396574281503fa30c6a63"
   file_format: "simple_json"
   pull:
     targets:
-    - file: "./app/locales/<locale_name>.json"
+    - file: "./app/locales/en.json"
       params:
         locale_id: b7af27e972e6fd8f5a941eef4b96dc43
+    - file: "./app/locales/nl.json"
+      params:
+        locale_id: b5eb45ebbfee7a4e75695599fcfa4ed9
+    - file: "./app/locales/de.json"
+      params:
+        locale_id: df1bd890921fcb99a00acef0bc1e2f35
+    - file: "./app/locales/fr.json"
+      params:
+        locale_id: 7fe2477517bdfc1c49636783f2263b77
+    - file: "./app/locales/da.json"
+      params:
+        locale_id: 678cd7ce2b43a83381ea3e396804aa4a
   push:
     sources:
-    - file: "./app/locales/<locale_name>.json"
+    - file: "./app/locales/en.json"
+      params:
+        locale_id: b7af27e972e6fd8f5a941eef4b96dc43
+    - file: "./app/locales/nl.json"
+      params:
+        locale_id: b5eb45ebbfee7a4e75695599fcfa4ed9
+    - file: "./app/locales/de.json"
+      params:
+        locale_id: df1bd890921fcb99a00acef0bc1e2f35
+    - file: "./app/locales/fr.json"
+      params:
+        locale_id: 7fe2477517bdfc1c49636783f2263b77
+    - file: "./app/locales/da.json"
+      params:
+        locale_id: 678cd7ce2b43a83381ea3e396804aa4a
